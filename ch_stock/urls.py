@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from balance import views as balance_views
+from index import view as index_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('balance/' , balance_views.main_view),
+    path('balancec/' , balance_views.main_view),
+    path('', index_views.main_view)
 ]
